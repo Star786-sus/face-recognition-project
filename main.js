@@ -19,7 +19,7 @@ Webcam.set
    }
 
    
-   classifier = ml5.imageClassifier('https://teachablemachine.withgoogle.com/models/v_sl95BzE/model.json', modelloaded);
+   classifier = ml5.imageClassifier('https://teachablemachine.withgoogle.com/models/ypKh0OASO/model.json', modelloaded);
 
    function modelloaded()
 {
@@ -41,8 +41,8 @@ function gotResult(error, results)
     else
     {
         console.log(results);
-        document.getElementById("result_object_name").innerHTML = results[0].label;
-        document.getElementById("result_object_accuracy").innerHTML = results[0].confidence.toFixed(3);
+        document.getElementById("result_recognition_name").innerHTML = results[0].label;
+        document.getElementById("result_recognition_accuracy").innerHTML = results[0].confidence.toFixed(3);
         
 
     }
